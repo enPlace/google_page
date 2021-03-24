@@ -66,12 +66,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 11px;
+  
     
 }
 
+
 #magnifier{
     left: 0;
-    margin-left: 15px;
+    margin-left: 10px;
+}
+#mag{
+    max-height: 35%;
 }
 
 #microphone{
@@ -86,7 +91,7 @@ body {
     border-radius: 50px;
     border-width: 1px;
     border-color: rgba(216, 209, 209, 0.966);
-    padding-left: 30px;
+    padding-left: 35px;
     padding-right: 30px;
     font-size: 20px;
 }
@@ -121,6 +126,7 @@ body {
 }
 
 #footer{
+    bottom: 0;
     padding: 13px;
     color: gray;
     
