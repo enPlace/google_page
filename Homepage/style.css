@@ -1,6 +1,12 @@
-body{
+body, html{
+
+    height: 100%;
+}
+body {
     margin: 0; 
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column
 }
 
 #navbar{
@@ -12,6 +18,13 @@ body{
     margin-right: 20px;
     margin-top: 20px; 
     font-size: 13px;
+}
+.toplink:hover{
+    text-decoration: underline;
+}
+#navbar button:hover{
+    background-color: rgb(6, 122, 218);
+ 
 }
 
 #navbar button{
@@ -30,24 +43,56 @@ body{
 }
 
 #middle{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
 
-    margin-top: 200px; 
+ 
 }
 #logo{
     text-align: center;
 }
 #searchbarContainer{
     text-align: center;
+    position: relative; 
+}
+#magnifier, #microphone{
+    position: absolute;
+    top:0; 
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
     
+}
+
+#magnifier{
+    left: 0;
+    margin-left: 15px;
+}
+
+#microphone{
+    right: 0;
+    margin-right: 15px;
 }
 #searchbar{
     margin-top: 20px;
     outline: none; 
-    width: 600px; 
+    width: 550px; 
     height: 40px; 
     border-radius: 50px;
     border-width: 1px;
     border-color: rgba(216, 209, 209, 0.966);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+#searchbar:hover{
+    box-shadow: 1px 1px 7px  gray;
 }
 
 #searchButtonContainer{
@@ -71,13 +116,33 @@ body{
 }
 
 .searchButton:hover{
-    border: 1px solid black;
+    border: 1px solid rgba(209, 205, 205, 0.74);
     padding: -1px;
-    border-color: rgb(110, 17, 17);
-  
-    
 }
+
 #footer{
-    bottom: 0px;
-    position: absolute;
+    padding: 13px;
+    color: gray;
+    
+    
+    
+    background-color: rgb(228, 228, 228);
+}
+
+
+.bottomright{
+    float: right;
+    margin-right: 30px;
+   
+}
+
+.bottomleft{
+    float: left; 
+
+    margin-left: 30px;
+}
+
+#bottomlink:hover{
+    text-decoration: underline;
+
 }
